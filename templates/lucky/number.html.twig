@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+{% for post in postes %}
+<h1>{{post.id}} : </h1>
+
+<a href="{{path('test', {id:post.id})}}"><h1>{{post.title}}</h1></a> 
+{% endfor %}
+
+{% endblock %}
+{% block javascripts %}{% endblock %}
